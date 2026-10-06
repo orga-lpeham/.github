@@ -1,0 +1,26 @@
+name: Task
+description: A specific piece of work
+title: "[Task] "
+type: Task
+body:
+  - type: textarea
+    id: work
+    attributes:
+      label: Work to be done
+      description: Describe the specific work required.
+    validations:
+      required: true
+  - type: textarea
+    id: completion_criteria
+    attributes:
+      label: Completion criteria
+      description: What must be true for this task to be considered complete?
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and references
+      description: Link any related issues or relevant context.
+    validations:
+      required: false
