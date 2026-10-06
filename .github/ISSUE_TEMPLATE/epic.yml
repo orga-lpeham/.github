@@ -1,0 +1,33 @@
+name: Epic
+description: A request, idea, or new functionality
+title: "[Epic] "
+type: Epic
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What broader outcome should this epic achieve?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Describe the work included in this epic and any known exclusions.
+    validations:
+      required: false
+  - type: textarea
+    id: success_criteria
+    attributes:
+      label: Success criteria
+      description: How will we know the epic is complete and successful?
+    validations:
+      required: true
+  - type: textarea
+    id: related_work
+    attributes:
+      label: Related work
+      description: Link any known child issues, dependencies, or references.
+    validations:
+      required: false
